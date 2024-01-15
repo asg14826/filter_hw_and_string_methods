@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function-practice</title>
+</head>
+
+<body>
+    <script>
+        //targil 1
+        let arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+        function add_arr_elements(arr) {
+            let sum = 0
+            for (let i = 0; i < arr.length; i++) {
+                sum += arr[i]
+            }
+            return sum
+        }
+        console.log(add_arr_elements(arr1))
+
+        //targil 2
+        let arr2 = [1, 2, 3, 894, 500, 96, 987, 8, 9, 10]
+
+        function find_the_biggest_element(arr) {
+            let max = 0
+            for (let i = 0; i < arr2.length; i++) {
+                if (arr[i] > max) {
+                    max = arr[i]
+                }
+            }
+            return max
+        }
+
+        console.log(find_the_biggest_element(arr2))
+
+        //targil 3
+
+        let uppper_case = "GOOD MORNING"
+
+        function lower_case(str) {
+            let lower_case = str.toLowerCase()
+            return lower_case
+        }
+        console.log(lower_case(uppper_case))
+
+        //targil 4
+
+        let x = "avigdor"
+
+        function func2(str, letter) {
+            let index = str.indexOf(letter)
+            return index
+        }
+        console.log(func2(x, 'a'))
+
+        //targil 5
+
+        let y = "hello beautifull world"
+        function func3(str, index1, index2) {
+            let index = str.substring(index1, index2)
+            return index
+        }
+        console.log(func3(y, 4, 9))
+
+        //targil 6
+
+        let z = "avigdor"
+
+        function func4(str) {
+            let temp = []
+            for (let i = 0; i < str.length; i++) {
+                console.log(i)
+                temp.push(str.charAt(i))
+            }
+            return temp
+        }
+        console.log(func4(z))
+
+        //targil 7 
+
+        let arr3 = [1, 2, 3, 4, 5, 6, 7, 8]
+
+        function func5(arr, num) {
+            return arr.filter(n => n != num)
+        }
+
+        console.log(func5(arr3, 8))
+
+        //targil 8
+
+        let myName = "avigdor"
+
+        function func6(str) {
+            let upsideString = " "
+            for (let i = str.length - 1; i >= 0; i--) {
+                upsideString += str[i]
+            }
+            return upsideString
+        }
+
+        console.log(func6(myName))
+
+        // targil 9
+
+        let arr_of_strings = ["hello", "and", "good", "morning"]
+
+        function to_string(arr) {
+            let str = ""
+            for (let i = 0; i < arr.length; i++) {
+                str += arr[i].toString() + " "
+            }
+            return str
+        }
+
+        console.log(to_string(arr_of_strings))
+
+        //targil 10
+
+        let arr4 = [7, 20, 18, 5, 12, 3]
+
+        function filterArr(arr) {
+            return arr.filter(n => n > 10 && n%2==0)
+
+        }
+
+        console.log(filterArr(arr4))
+    </script>
+</body>
+
+</html>
+</body>
+</html>
